@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="posts">
+    <div class="post">
+      <h2 class="post-title">
+        <a href="{{ SITEURL }}/{{ page.url }}">
+          {{ page.title }}
+        </a>
+      </h2>
+      {{ page.content }}
+    </div>
+  </div>
+{% endblock content %}
