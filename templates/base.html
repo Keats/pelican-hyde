@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
   </head>
 
-  <body>
+  <body class="{% if COLOR_SCHEME %}{{ COLOR_SCHEME }}{% endif %} {% if LAYOUT_REVERSED %}layout-reverse{%endif %}">
 
     <div class="sidebar">
       <div class="container sidebar-sticky">
