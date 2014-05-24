@@ -12,7 +12,7 @@
       </h2>
 
       <span class="post-date">
-        {{ article.date|strftime('%Y-%m-%d') }} {% if article.modified %} (last modified: {{ article.modified }}) {% endif %}
+        {{ article.date|strftime('%Y-%m-%d') }} {% if article.updated %} (last modified: {{ article.updated }}) {% endif %}
       </span>
 
       {{ article.content }}

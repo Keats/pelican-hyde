@@ -13,8 +13,8 @@
 
           <span class="post-date">
           {{ article.date|strftime('%Y-%m-%d') }} 
-          {% if article.modified %}
-            (last modified: {{ article.modified }})
+          {% if article.updated %}
+            (last modified: {{ article.updated }})
           {% endif %}
           </span>
         </div>
