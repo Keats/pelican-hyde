@@ -11,11 +11,9 @@
         </a>
       </h2>
 
-      <span class="post-date">{{ article.date|strftime('%Y-%m-%d')  }}</span>
-
-      {% if article.modified %}
-        <span class="post-date">Last modified: {{ article.modified|strftime('%Y-%m-%d') }}</span>
-      {% endif %}
+      <span class="post-date">
+        {{ article.date|strftime('%Y-%m-%d') }} {% if article.modified %} (last modified: {{ article.modified }}) {% endif %}
+      </span>
 
       {{ article.content }}
     </div>
