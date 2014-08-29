@@ -2,3 +2,7 @@
  .index .post {
     margin-bottom: 1em;
  }
+
+.sidebar-nav li {
+    list-style: none;
+}
